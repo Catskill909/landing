@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SuperSoul.top</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap"
+      onload="this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap"
+      />
+    </noscript>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: radial-gradient(circle at 22% 18%, rgba(43, 72, 170, 0.18), #02030a 60%);
+        font-family: "Titillium Web", sans-serif;
+        color: #ffffff;
+      }
+
+      h1 {
+        font-size: clamp(2.5rem, 10vw, 9rem);
+        line-height: 1.05;
+        letter-spacing: 0.05em;
+        text-align: center;
+        font-weight: 900;
+        animation: breathe 7.5s ease-in-out infinite;
+      }
+
+      @keyframes breathe {
+        0%,
+        100% {
+          transform: scale(1);
+          text-shadow: 0 0 10px rgba(255, 255, 255, 0.12);
+        }
+        50% {
+          transform: scale(1.015);
+          text-shadow: 0 0 18px rgba(255, 255, 255, 0.2);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to SuperSoul.top</h1>
+  </body>
+</html>
